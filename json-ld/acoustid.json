@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "@id": "https://acoustid.org/",
+  "name": "AcoustID Web Service API",
+  "description": "REST API for audio fingerprint lookup and submission. Accepts Chromaprint-generated fingerprints and returns AcoustID track identifiers along with linked MusicBrainz metadata including recordings, artists, and releases.",
+  "url": "https://acoustid.org/webservice",
+  "documentation": "https://acoustid.org/webservice",
+  "termsOfService": "https://acoustid.org/",
+  "provider": {
+    "@type": "Organization",
+    "name": "AcoustID",
+    "url": "https://acoustid.org/",
+    "sameAs": [
+      "https://github.com/acoustid",
+      "https://twitter.com/acoustid"
+    ]
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://acoustid.biz/"
+  },
+  "endpointURL": "https://api.acoustid.org/v2",
+  "keywords": [
+    "audio fingerprinting",
+    "music identification",
+    "MusicBrainz",
+    "Chromaprint",
+    "open source",
+    "audio lookup"
+  ],
+  "license": "https://acoustid.org/",
+  "softwareVersion": "v2",
+  "inLanguage": "en"
+}
