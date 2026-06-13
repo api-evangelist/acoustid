@@ -1,0 +1,59 @@
+name: AcoustID FinOps
+description: Financial operations guidance for managing costs when using the AcoustID audio fingerprinting API. Free for non-commercial use; commercial use billed monthly through AcoustID OÜ.
+url: https://acoustid.biz/
+currency: EUR
+billingModel: monthly-postpaid
+notes: >
+  AcoustID uses a postpaid monthly billing model for commercial plans — you are billed at the end of
+  each month for the prior month's actual usage. Non-commercial and open source use remains
+  completely free with a 3 requests/second rate limit.
+
+costDrivers:
+  - name: Search Volume
+    description: Primary cost driver for commercial plans. Each audio fingerprint lookup counts as one search against the monthly included quota.
+    unit: searches per month
+    tiers:
+      - label: Small
+        included: 1000000
+        price: 50
+        currency: EUR
+      - label: Medium
+        included: 15000000
+        price: 100
+        currency: EUR
+      - label: Large
+        included: 150000000
+        price: 500
+        currency: EUR
+
+optimization:
+  - strategy: Use free tier for development and testing
+    description: Non-commercial and open source projects can use the free tier indefinitely. Use a test API key during development (note it expires after a few days).
+
+  - strategy: Enable GZip compression on POST requests
+    description: Compressing fingerprint data in POST bodies reduces bandwidth and may improve throughput for high-volume submission workflows.
+
+  - strategy: Batch metadata requests
+    description: Request only the metadata fields you need (recordings, artists, releases, MBIDs) by specifying the `meta` parameter to reduce response payload sizes.
+
+  - strategy: Cache lookup results
+    description: AcoustIDs are stable identifiers. Cache lookup results locally to avoid re-querying the same fingerprint multiple times.
+
+  - strategy: Monitor monthly search volume
+    description: Track your monthly search count to avoid unexpectedly upgrading to a higher plan tier. Contact info@acoustid.biz for custom plans if standard tiers do not fit usage patterns.
+
+  - strategy: Start with the free trial
+    description: All commercial plans include a free trial covering the first 10,000 searches before billing begins.
+
+billing:
+  cycle: monthly
+  timing: billed at end of month for prior month usage
+  cancellation: cancel anytime, no refunds issued
+  trialSearches: 10000
+  contact: info@acoustid.biz
+
+overage:
+  notes: >
+    If usage exceeds the included searches for the selected plan tier, consider upgrading to the
+    next tier. Contact AcoustID OÜ at info@acoustid.biz to discuss custom arrangements if none
+    of the standard tiers are cost-effective.

@@ -1,0 +1,49 @@
+name: AcoustID Rate Limits
+description: Rate limiting policies for the AcoustID audio fingerprinting REST API. Free non-commercial use is limited to 3 requests per second. Commercial plans through acoustid.biz have no rate limiting.
+url: https://acoustid.org/webservice
+limits:
+  - plan: Free (Non-Commercial)
+    requestsPerSecond: 3
+    notes: >
+      Non-commercial and open source applications must not exceed 3 requests per second.
+      Exceeding this limit may result in throttling or access restrictions.
+
+  - plan: Commercial (Small / Medium / Large)
+    requestsPerSecond: unlimited
+    notes: >
+      All paid commercial plans through acoustid.biz have no rate limiting imposed.
+      Search volume is metered and billed monthly based on actual usage.
+
+endpoints:
+  - path: /v2/lookup
+    method: GET
+    description: Lookup audio track by fingerprint or AcoustID track ID
+    rateLimit: Subject to plan limits
+
+  - path: /v2/submit
+    method: POST
+    description: Submit a new audio fingerprint to the database
+    rateLimit: Subject to plan limits
+    notes: POST with GZip compression recommended for lengthy fingerprints
+
+  - path: /v2/submission_status
+    method: GET
+    description: Check the status of a previously submitted fingerprint
+    rateLimit: Subject to plan limits
+
+  - path: /v2/track/list_by_mbid
+    method: GET
+    description: List AcoustIDs associated with a MusicBrainz ID
+    rateLimit: Subject to plan limits
+
+authentication:
+  - type: API Key (client)
+    description: Application API key obtained by registering an application at acoustid.org/new-applications. Required for all requests as the `client` parameter.
+  - type: User API Key
+    description: User-specific API key required for fingerprint submission. Obtained after signing in to acoustid.org.
+
+notes:
+  - Test API keys expire automatically after a few days
+  - POST method with GZip compression is recommended for large fingerprints
+  - All text uses UTF-8 encoding
+  - Responses available in JSON (default), JSONP (with callback parameter), and XML

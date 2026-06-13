@@ -1,0 +1,76 @@
+name: AcoustID Plans and Pricing
+description: Pricing plans for AcoustID audio fingerprinting API service. Non-commercial and open source use is free with rate limiting. Commercial use requires a paid subscription through AcoustID OÜ (acoustid.biz).
+url: https://acoustid.biz/
+plans:
+  - name: Free (Non-Commercial)
+    description: Free access for non-commercial and open source applications with rate limiting applied.
+    price: 0
+    currency: EUR
+    period: month
+    rateLimit: 3 requests per second
+    features:
+      - Audio fingerprint lookup via REST API
+      - Fingerprint submission to crowdsourced database
+      - MusicBrainz metadata integration
+      - JSON, JSONP, and XML response formats
+      - GZip compression support
+    limitations:
+      - Maximum 3 requests per second
+      - Non-commercial use only
+      - Commercial use requires paid plan
+
+  - name: Small
+    description: Commercial plan for small-scale audio identification needs.
+    price: 50
+    currency: EUR
+    period: month
+    includedSearches: 1000000
+    rateLimit: No rate limiting
+    features:
+      - 1 million searches included
+      - No rate limiting
+      - Free trial (first 10k searches)
+      - Monthly billing for prior month usage
+      - Cancel anytime
+
+  - name: Medium
+    description: Commercial plan for medium-scale audio identification needs.
+    price: 100
+    currency: EUR
+    period: month
+    includedSearches: 15000000
+    rateLimit: No rate limiting
+    features:
+      - 15 million searches included
+      - No rate limiting
+      - Free trial (first 10k searches)
+      - Monthly billing for prior month usage
+      - Cancel anytime
+
+  - name: Large
+    description: Commercial plan for large-scale audio identification needs.
+    price: 500
+    currency: EUR
+    period: month
+    includedSearches: 150000000
+    rateLimit: No rate limiting
+    features:
+      - 150 million searches included
+      - No rate limiting
+      - Free trial (first 10k searches)
+      - Monthly billing for prior month usage
+      - Cancel anytime
+
+  - name: Custom
+    description: Custom plans available for single developers or unique use cases. Contact info@acoustid.biz to discuss.
+    price: custom
+    currency: EUR
+    period: month
+    features:
+      - Custom search volume
+      - Flexible pricing for independent developers
+      - Direct negotiation with AcoustID OÜ
+
+contact: info@acoustid.biz
+company: AcoustID OÜ
+address: Sepapaja 6, Tallinn, 15551, Estonia

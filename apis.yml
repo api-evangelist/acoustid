@@ -1,0 +1,53 @@
+aid: acoustid
+name: AcoustID
+description: AcoustID is an open-source audio fingerprinting service providing a REST API for identifying music tracks by audio fingerprint and linking results to MusicBrainz metadata records. Built on the Chromaprint library, it offers a crowdsourced fingerprint database free for non-commercial use, with commercial plans available through AcoustID OÜ.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/acoustid/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - Audio
+  - Fingerprinting
+  - Music
+  - MusicBrainz
+  - Open Source
+  - Identification
+apis:
+  - aid: acoustid:acoustid-api
+    name: AcoustID Web Service API
+    description: REST API for audio fingerprint lookup and submission. Accepts Chromaprint-generated fingerprints and returns AcoustID track identifiers along with linked MusicBrainz metadata including recordings, artists, and releases.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://acoustid.org/webservice
+    baseURL: https://api.acoustid.org/v2
+    tags:
+      - Audio
+      - Fingerprinting
+      - Music
+      - Lookup
+      - Submission
+    properties:
+      - type: Documentation
+        url: https://acoustid.org/webservice
+common:
+  - type: Website
+    url: https://acoustid.org/
+  - type: Documentation
+    url: https://acoustid.org/webservice
+  - type: GitHubOrg
+    url: https://github.com/acoustid
+  - type: Blog
+    url: https://blog.acoustid.org/
+  - type: Pricing
+    url: https://acoustid.biz/
+  - type: X
+    url: https://twitter.com/acoustid
+  - type: Plans
+    url: plans/acoustid-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/acoustid-rate-limits.yml
+  - type: FinOps
+    url: finops/acoustid-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
