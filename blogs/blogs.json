@@ -1,6 +1,6 @@
 {
   "url": "https://blog.acoustid.org/",
-  "fetched": "2026-06-13",
+  "fetched": "2026-06-14T20:42:17Z",
   "posts": [
     {
       "title": "Chromaprint 1.6.0 released",
@@ -62,5 +62,16 @@
       "url": "https://blog.acoustid.org/posts/2016-02-10-chromaprint-1-3-1-released/",
       "summary": "Minor fixes for fingerprint length restrictions and library versioning."
     }
-  ]
+  ],
+  "repo": "acoustid",
+  "feeds": [
+    {
+      "source": "https://github.com/acoustid",
+      "feed_url": "https://github.com/acoustid",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0
 }
