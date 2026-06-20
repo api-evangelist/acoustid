@@ -1,7 +1,7 @@
 aid: acoustid
 name: AcoustID
 description: AcoustID is an open-source audio fingerprinting service providing a REST API for identifying music tracks by audio fingerprint and linking results to MusicBrainz metadata records. Built on the Chromaprint library, it offers a crowdsourced fingerprint database free for non-commercial use, with commercial plans available through AcoustID OÜ.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/acoustid/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -17,7 +17,7 @@ apis:
   - aid: acoustid:acoustid-api
     name: AcoustID Web Service API
     description: REST API for audio fingerprint lookup and submission. Accepts Chromaprint-generated fingerprints and returns AcoustID track identifiers along with linked MusicBrainz metadata including recordings, artists, and releases.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://acoustid.org/webservice
     baseURL: https://api.acoustid.org/v2
     tags:
