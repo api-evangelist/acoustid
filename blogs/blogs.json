@@ -1,77 +1,13 @@
 {
-  "url": "https://blog.acoustid.org/",
-  "fetched": "2026-06-14T20:42:17Z",
-  "posts": [
-    {
-      "title": "Chromaprint 1.6.0 released",
-      "date": "2025-08-28",
-      "url": "https://blog.acoustid.org/posts/2025-08-28-chromaprint-1-6-0-released/",
-      "summary": "New version adds FFmpeg 8.0 support, performance enhancements, and Linux ARM64 binary builds."
-    },
-    {
-      "title": "AcoustID will stop accepting fingerprints without metadata",
-      "date": "2024-12-15",
-      "url": "https://blog.acoustid.org/posts/2024-12-15-acoustid-will-stop-accepting-fingerprints-without-metadata/",
-      "summary": "Policy change to halt submissions lacking metadata, as unidentified fingerprints comprised majority of database bloat."
-    },
-    {
-      "title": "mbdata 27.1.0 released",
-      "date": "2022-12-02",
-      "url": "https://blog.acoustid.org/posts/2022-12-02-mbdata-27-1-0-released/",
-      "summary": "Package update supporting latest MusicBrainz schema with automated database mirror initialization capabilities."
-    },
-    {
-      "title": "Chromaprint 1.5.1 released",
-      "date": "2021-12-23",
-      "url": "https://blog.acoustid.org/posts/2021-12-23-chromaprint-1-5-1-released/",
-      "summary": "Binary-only release introducing Apple M1 CPU support."
-    },
-    {
-      "title": "Data Exports Restored",
-      "date": "2021-03-26",
-      "url": "https://blog.acoustid.org/posts/2021-03-25-data-exports-restored/",
-      "summary": "Daily JSON data exports are now available after infrastructure incident."
-    },
-    {
-      "title": "Postmortem of the March 2, 2021 outage",
-      "date": "2021-03-05",
-      "url": "https://blog.acoustid.org/posts/2021-03-05-postmortem-of-the-march-2-2021-outage/",
-      "summary": "Analysis of major infrastructure failure causing complete service downtime."
-    },
-    {
-      "title": "Chromaprint 1.5 released",
-      "date": "2020-04-15",
-      "url": "https://blog.acoustid.org/posts/2020-04-15-chromaprint-1-5-released/",
-      "summary": "Minor update with PostgreSQL integration improvements and bug fixes."
-    },
-    {
-      "title": "Chromaprint 1.4 released",
-      "date": "2016-12-03",
-      "url": "https://blog.acoustid.org/posts/2016-12-03-chromaprint-1-4-released/",
-      "summary": "Significant release enabling streaming audio processing with partial fingerprint results."
-    },
-    {
-      "title": "Chromaprint 1.3.2 released",
-      "date": "2016-07-09",
-      "url": "https://blog.acoustid.org/posts/2016-07-09-chromaprint-1-3-2-released/",
-      "summary": "Bug fix addressing crash on corrupted audio files."
-    },
-    {
-      "title": "Chromaprint 1.3.1 released",
-      "date": "2016-02-10",
-      "url": "https://blog.acoustid.org/posts/2016-02-10-chromaprint-1-3-1-released/",
-      "summary": "Minor fixes for fingerprint length restrictions and library versioning."
-    }
-  ],
   "repo": "acoustid",
   "feeds": [
     {
-      "source": "https://github.com/acoustid",
-      "feed_url": "https://github.com/acoustid",
-      "title": "",
-      "saved": 0,
-      "method": "none"
+      "source": "https://blog.acoustid.org/",
+      "feed_url": "https://blog.acoustid.org/index.xml",
+      "title": "AcoustID Blog",
+      "saved": 0
     }
   ],
+  "fetched": "2026-06-21T17:00:00Z",
   "post_count": 0
 }
