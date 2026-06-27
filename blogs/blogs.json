@@ -2,12 +2,20 @@
   "repo": "acoustid",
   "feeds": [
     {
-      "source": "https://blog.acoustid.org/",
+      "source": "https://blog.acoustid.org/index.xml",
       "feed_url": "https://blog.acoustid.org/index.xml",
-      "title": "AcoustID Blog",
-      "saved": 0
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://github.com/acoustid",
+      "feed_url": "https://github.com/acoustid",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "fetched": "2026-06-21T17:00:00Z",
+  "fetched": "2026-06-27T12:03:07Z",
   "post_count": 0
 }
