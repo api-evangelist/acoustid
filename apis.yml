@@ -1,6 +1,17 @@
 aid: acoustid
 name: AcoustID
 description: AcoustID is an open-source audio fingerprinting service providing a REST API for identifying music tracks by audio fingerprint and linking results to MusicBrainz metadata records. Built on the Chromaprint library, it offers a crowdsourced fingerprint database free for non-commercial use, with commercial plans available through AcoustID OÜ.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
