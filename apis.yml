@@ -34,7 +34,7 @@ tags:
   - Fingerprinting
   - Music
   - MusicBrainz
-  - Open-Source
+  - Open Source
   - Identification
 tags_raw:
   - Audio
@@ -43,6 +43,7 @@ tags_raw:
   - MusicBrainz
   - Open Source
   - Identification
+  - Open-Source
 apis:
   - aid: acoustid:acoustid-api
     name: AcoustID Web Service API
