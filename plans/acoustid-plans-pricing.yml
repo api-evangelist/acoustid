@@ -78,3 +78,47 @@ plans:
 contact: info@acoustid.biz
 company: AcoustID OÜ
 address: Sepapaja 6, Tallinn, 15551, Estonia
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - negotiated
+  - subscription
+  units: []
+  plans:
+  - name: Free (Non-Commercial)
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: Small
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: Medium
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: Large
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: Custom
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods:
+    - month
