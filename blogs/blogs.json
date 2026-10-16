@@ -2,11 +2,11 @@
   "repo": "acoustid",
   "feeds": [
     {
-      "source": "https://github.com/acoustid",
-      "feed_url": "https://github.com/acoustid",
+      "source": "https://blog.acoustid.org/",
+      "feed_url": "https://blog.acoustid.org/index.xml",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "discovered"
     },
     {
       "source": "https://blog.acoustid.org/index.xml",
@@ -14,9 +14,16 @@
       "title": "",
       "saved": 0,
       "method": "feed"
+    },
+    {
+      "source": "https://github.com/acoustid",
+      "feed_url": "https://github.com/acoustid",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "fetched": "2026-10-03T12:30:02Z",
+  "fetched": "2026-10-10T13:15:00Z",
   "post_count": 47,
   "feed_nature": "vendor-blog",
   "feed_nature_basis": "blog_subdomain",
