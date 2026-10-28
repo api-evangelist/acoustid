@@ -66,41 +66,102 @@
 
 AcoustID is an open-source audio fingerprinting service providing a REST API for identifying music tracks by audio fingerprint and linking results to MusicBrainz metadata records. Built on the Chromaprint library, it offers a crowdsourced fingerprint database free for non-commercial use, with commercial plans available through AcoustID OÜ.
 
-## Links
+**Areas:** Audio · Fingerprinting · Music · MusicBrainz · Open Source · Identification
 
-- **Website:** https://acoustid.org/
-- **API Documentation:** https://acoustid.org/webservice
-- **GitHub Organization:** https://github.com/acoustid
-- **Blog:** https://blog.acoustid.org/
-- **Commercial Pricing:** https://acoustid.biz/
-- **X (Twitter):** https://twitter.com/acoustid
+## AcoustID on APIs.io
 
-## API
+Everything profiled for AcoustID is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/acoustid/](https://apis.io/providers/acoustid/)** — or go straight to one of the APIs or properties below.
 
-The AcoustID Web Service API is available at `https://api.acoustid.org/v2` and provides:
+### APIs (1)
 
-- **Lookup** — identify a music track by Chromaprint fingerprint or AcoustID track ID
-- **Submit** — contribute a new fingerprint to the crowdsourced database
-- **Submission Status** — check the processing status of a submitted fingerprint
-- **List by MBID** — retrieve AcoustIDs linked to a MusicBrainz recording ID
+- [AcoustID Web Service API](https://apis.io/apis/acoustid/acoustid-api/) — REST API for audio fingerprint lookup and submission. Accepts Chromaprint-generated fingerprints and returns AcoustID track identifiers along with linked…
 
-All requests require an application API key (`client` parameter) obtained by registering at https://acoustid.org/new-applications. Fingerprint submission additionally requires a user API key.
+### Published properties
 
-Responses are available in JSON (default), JSONP, and XML. GZip compression is supported on POST request bodies.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Plans and Pricing
+#### Security (1)
 
-- **Free** — Non-commercial and open source use at no cost, limited to 3 requests/second
-- **Small** — €50/month for 1 million searches, no rate limiting
-- **Medium** — €100/month for 15 million searches, no rate limiting
-- **Large** — €500/month for 150 million searches, no rate limiting
-- **Custom** — Contact info@acoustid.biz for tailored plans
+Authentication, trust centre, and vulnerability disclosure.
 
-All commercial plans include a free trial covering the first 10,000 searches.
+- [Acoustid Domain Security](https://apis.io/security/acoustid/acoustid-domain-security/)
 
-## Repository Contents
+#### Plans and pricing (1)
 
-- `apis.yml` — APIs.json 0.19 provider profile
-- `plans/acoustid-plans-pricing.yml` — Plan and pricing details
-- `rate-limits/acoustid-rate-limits.yml` — Rate limiting policies
-- `finops/acoustid-finops.yml` — FinOps cost optimization guidance
+Published plans, tiers and prices.
+
+- [Acoustid Plans Pricing](https://apis.io/plans/acoustid/acoustid-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Acoustid Rate Limits](https://apis.io/rate-limits/acoustid/acoustid-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Acoustid Finops](https://apis.io/finops/acoustid/acoustid-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://acoustid.org/)
+- [Documentation](https://acoustid.org/webservice)
+- [Pricing](https://acoustid.biz/)
+- [Blog](https://blog.acoustid.org/)
+
+## API Evangelist rating
+
+**Kin Score 12.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 18.4 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/acoustid/](https://apis.io/providers/acoustid/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for AcoustID: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/acoustid/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
